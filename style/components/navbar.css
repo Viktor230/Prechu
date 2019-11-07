@@ -1,0 +1,88 @@
+.menu-btn {
+  display: inline-block;
+  width: 100px;
+  height: 44px;
+  background-color: #5094f2;
+  position: relative;
+}
+
+.menu-btn span::before,
+.menu-btn span::after,
+.menu-btn span {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 36px;
+  height: 6px;
+  margin-top: -3px;
+  margin-left: -18px;
+  background-color: #fff;
+  transition: 0.5s;
+}
+
+.menu-btn span::before,
+.menu-btn span::after {
+  content: "";
+  display: block;
+}
+
+.menu-btn span::before {
+  transform: translateY(10px);
+}
+
+.menu-btn span::after {
+  transform: translateY(-10px);
+}
+
+.menu-btn-active span {
+  background-color: transparent;
+}
+
+.menu-btn-active span::after {
+  transform: rotate(45deg);
+}
+
+.menu-btn-active span::before {
+  transform: rotate(-45deg);
+}
+
+.menu-block {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  right: 0;
+}
+
+.navbar {
+  display: flex;
+  flex-direction: column;
+  transform: scaleY(0);
+  transform-origin: top center;
+  opacity: 0;
+  transition: 0.4s;
+  width: 100px;
+  position: absolute;
+  top: 44px;
+  z-index: 5;
+}
+
+.navbar-active {
+  display: flex;
+  transform: scaleY(1);
+  opacity: 1;
+}
+
+.navbar-item {
+  width: 100px;
+  padding: 15px 5px 15px 10px;
+  background-color: #5094f2;
+  font-size: 20px;
+  color: #000;
+}
+.navbar-desktop {
+  display: none;
+}
+.navbar-item-desk {
+  color: #6c6c6c;
+  font-size: 20px;
+}

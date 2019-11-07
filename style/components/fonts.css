@@ -1,0 +1,44 @@
+@font-face {
+  font-family: "pechu";
+  src: url("../../fonts/pechu.eot?l0373u");
+  src: url("../../fonts/pechu.eot?l0373u#iefix") format("embedded-opentype"),
+    url("../../fonts/pechu.ttf?l0373u") format("truetype"),
+    url("../../fonts/pechu.woff?l0373u") format("woff"),
+    url("../../fonts/pechu.svg?l0373u#pechu") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"],
+[class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: "pechu" !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-galoch:before {
+  content: "\e903";
+  color: #fff;
+}
+.icon-cart:before {
+  content: "\e900";
+  color: #fff;
+}
+.icon-monitor:before {
+  content: "\e901";
+  color: #fff;
+}
+.icon-pencil:before {
+  content: "\e902";
+  color: #fff;
+}

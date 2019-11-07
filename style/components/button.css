@@ -1,0 +1,27 @@
+.button {
+  display: flex;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 300;
+  font-family: "Quattrocento Sans", sans-serif;
+  padding: 9px 11px 9px 11px;
+  border: 2px solid #ffffff;
+}
+.button:hover {
+  background-color: #5094f2;
+  border-color: #5094f2;
+  color: #ffffff;
+}
+/* HERO-BUTTON */
+.hero-button {
+  margin-right: 15px;
+  font-size: 22px;
+}
+.hero-button span {
+  font-size: 23px;
+  margin-right: 11px;
+}
+/* HERO-BUTTON */
+.btn-desktop {
+  display: none;
+}
